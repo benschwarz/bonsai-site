@@ -1,0 +1,13 @@
+:title: How bonsai works
+:body: |
+  <p>Bonsai uses a set of very simple conventions to handle content and templating.</p>
+  
+  <h3>Content</h3>
+  <p>All content is stored on the file system in the "content" directory, the folder paths that you use will imply the paths used on the final web site.</p>
+  <p>For example, a page that was kept under <code>content/about-us/services</code> will have a permalink of "/about-us/services".</p>
+  <p>For a page to be recognised, you'll need a <code>template-name.yml</code> file. The "template-name" section of the file name referrers to the template that will be used to render your page.</p>
+  
+  <h3>Templates</h3>
+  <p>Templates are kept in the "templates" directory. All templates are rendered using <a href="http://github.com/defunkt/mustache">mustache</a> for documentation about more specific templating, check the mustache readme or google group.</p>
+  
+  <h3></h3>
