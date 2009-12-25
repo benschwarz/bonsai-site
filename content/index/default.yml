@@ -1,5 +1,5 @@
 :title: Forward
 :body: |
   Bonsai is a static web site generator that is designed to keep a clear seperation between your content and templates. It aims to be elegant and follow best web practices.
+
   Build your site, run a generator, upload. Job done.
-  
