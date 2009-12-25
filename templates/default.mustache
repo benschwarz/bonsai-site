@@ -2,24 +2,23 @@
 <html>
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <title>Bonsai, a tiny static web site generator</title>
+    <title>Bonsai, a tiny static web site generator - {{title}}</title>
     <meta name="keywords" content="ruby, static, website, web, site, generator">
     <meta name="description" content="An elegant static web site generator">
     <link rel="stylesheet" href="/docs/css/base.css" type="text/css" charset="utf-8">
   </head>
   <body id="{{slug}}">
-    {{> shared/header}}
-    {{> shared/nav}}
+    <section id="wrapper">
+      {{> shared/header}}
+      {{> shared/nav}}
     
-    <section>
-      <h2>{{title}}</h2>
-      <article>
-        {{{body}}}
-      </article>
+      <section>
+        <h2>{{title}}</h2>
+        <article>
+          {{{body}}}
+        </article>
+      </section>
+      {{> shared/footer}}
     </section>
-    <footer>
-      <p>Bonsai is written by Ben Schwarz and available via the MIT LICENCE.</p>
-      <p>Source code is availble on <a href="http://github.com/benschwarz/bonsai">Github</a></p>
-    </footer>
   </body>
 </html>
