@@ -1,24 +1,21 @@
 :title: Getting started with Bonsai
 :body: | 
-  <p>To run Bonsai you will need Ruby and Rubygems. If you're using a Mac the good news is that Ruby and Rubygems will already been installed.</p>
-  <p>To install Bonsai, open your Terminal and run <code>sudo gem install bonsai</code>.</p>
+  To run Bonsai you will need Ruby and Rubygems. If you're using a Mac the good news is that Ruby and Rubygems will already been installed.
+  To install Bonsai, open Terminal.app and run `sudo gem install bonsai`.
   
-  <p>Once installed typing <code>bonsai --help</code> will display a list of available options.</p>
-  <pre>
-    <code>
+  Once installed typing `bonsai --help` will display a list of available options.
       > bonsai --help  
 
       盆栽
       bonsai, tiny and beautiful
 
             --plant [NAME]               creates the directory structure for your site
-            --repot                      export your site
+            --repot                      export your site to /Users/ben/Documents/Projects/bonsai-site/output
             --cultivate                  run a local web server and process your files on save
             --version
             --console                    start an IRB console session giving you access to your bonsai environment
-    </code>
-  </pre>
-  <p>To create the required framework for your new site, use <code>bonsai --plant jasper</code>, the generator will create your framework in <code>./jasper</code>. </p>  
-  <p>To have a running webserver of your site while you develop it, run <code>bonsai --cultivate</code> from within your generated framework (<code>cd ./jasper</code>). A web server will start on port 5000, navigate to <a href="http://localhost:5000/">localhost</a> and get hacking</p>
+
+  To create the required framework for your new site, use `bonsai --plant jasper`, the generator will create your framework in `./jasper`.
+  To have a running webserver of your site while you develop it, run `bonsai --cultivate` from within your generated framework (`cd ./jasper`). A web server will start on port 5000, navigate to [localhost](http://localhost:5000) and get hacking
   
-  <p>When you save, add or remove files <code>bonsai --cultivate</code> will process your files, images, js, and css will be rendered into the <code>output</code> directory. This is so that they can be served using relative paths.</p>
+  When you save, add or remove files `bonsai --cultivate` will process your files, images, js, and css will be rendered into the `output` directory. This is so that they can be served using relative paths.

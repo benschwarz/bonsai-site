@@ -1,13 +1,23 @@
 :title: How bonsai works
 :body: |
-  <p>Bonsai uses a set of very simple conventions to handle content and templating.</p>
+  Bonsai uses a set of very simple conventions to handle content and templating.
   
-  <h3>Content</h3>
-  <p>All content is stored on the file system in the "content" directory, the folder paths that you use will imply the paths used on the final web site.</p>
-  <p>For example, a page that was kept under <code>content/about-us/services</code> will have a permalink of "/about-us/services".</p>
-  <p>For a page to be recognised, you'll need a <code>template-name.yml</code> file. The "template-name" section of the file name referrers to the template that will be used to render your page.</p>
+  ### Content
+  All content is stored on the file system in the "content" directory, the folder paths that you use will imply the paths used on the final web site.
   
-  <h3>Templates</h3>
-  <p>Templates are kept in the "templates" directory. All templates are rendered using <a href="http://github.com/defunkt/mustache">mustache</a> for documentation about more specific templating, check the mustache readme or google group.</p>
+  For example, a page that was kept under `content/about-us/services` will have a permalink of "/about-us/services".
   
-  <h3></h3>
+  For a page to be recognised, you'll need a `template-name.yml` file. The "template-name" section of the file name referrers to the template that will be used to render your page.
+  
+  #### Ordering and "Floating" pages
+  
+  Bonsai will order your pages within the "navigation", "children" and "siblings" arrays by the prefix given to its parent folder. `content/1.about-us` will be ordered before `content/2.products` but don't worry - this will be cleaned up and removed from the final permalink
+  
+  "Floating" pages are not present in the "navigation", "children" or "siblings" arrays. This can be achieved by _not_ prefixing the containing directory eg `content/about-us/services` with a digit.
+  
+  ### Templates
+  Templates are kept in the "templates" directory. All templates are rendered using [mustache](http://github.com/defunkt/mustache). For documentation about more templating, check the mustache readme or google group.
+  
+  ### Public
+  All files kept in the "public" directory will be copied into the "output" directory. Any `.less` files will be processed using lesscss and will be renamed to .css
+  When you run `bonsai --repot` to ready your site for deployment all the .css and .js files will be minified using the YUI compressor.
