@@ -1,6 +1,15 @@
 :title: How bonsai works
 :body: |
-  Bonsai uses a set of very simple conventions to handle content and templating.
+  Bonsai uses a set of very simple conventions to handle content and templating. Everything is managed through the filesystem. There is no database, no admin interface. It's just you and your content.
+  
+      /site-name
+        - content
+          - index
+            default.yml
+        - public
+        - templates
+          default.mustache
+          - partials
   
   ### Content
   All content is stored on the file system in the "content" directory, the folder paths that you use will imply the paths used on the final web site.
@@ -14,6 +23,21 @@
   Bonsai will order your pages within the "navigation", "children" and "siblings" arrays by the prefix given to its parent folder. `content/1.about-us` will be ordered before `content/2.products` but don't worry - this will be cleaned up and removed from the final permalink
   
   "Floating" pages are not present in the "navigation", "children" or "siblings" arrays. This can be achieved by _not_ prefixing the containing directory eg `content/about-us/services` with a digit.
+  
+  Each page that you create has access to a set of predefined variables as well as its content, you can use these to build complex navigation and get access to images or downloads stored for each page.
+  
+  #### Page variables
+  
+  | Variable  |                     |  
+  |:----------|:--------------------|
+  |children   | All of the non-floating pages underneath the current page |
+  |siblings   | All of the non-floating pages at the same level. Does not include 'self' |
+  |ancestors  | Each parent up the tree - Useful for breadcrumbing |
+  |parent     | The direct parent page |
+  |permalink  | The full routable path to the page, eg: `/about/our/services` |
+  |slug       | The last chunk of a page name, can be used in HTML as an ID or className, eg: `services` |
+  |name       | A titlcased version of the slug. This can be useful for use in navigation or links |
+  
   
   ### Templates
   Templates are kept in the "templates" directory. All templates are rendered using [mustache](http://github.com/defunkt/mustache). For documentation about more templating, check the mustache readme or google group.
