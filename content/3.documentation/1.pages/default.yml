@@ -22,6 +22,7 @@
   |permalink  | The full routable path to the page, eg: `/about/our/services` |
   |slug       | The last chunk of a page name, can be used in HTML as an ID or className, eg: `services` |
   |name       | A titlcased version of the slug. This can be useful for use in navigation or links |
+  |navigation | The top level non-floating pages |
   
   #### "Magic" variables
   A page that contains subdirectories will receive additional variables, for example:
