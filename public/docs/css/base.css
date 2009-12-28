@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "M+1 Heavy";
+  src: url("/docs/fonts/mplus-1p-heavy.eot");
+  src: local("M+ 1p heavy"), local("mplus-1p-heavy");
+  src: url("/docs/fonts/mplus-1p-heavy.ttf");
+}
+@font-face {
+  font-family: "M+2 Light";
+  src: url("/docs/fonts/mplus-2p-light.eot");
+  src: local("M+ 2p light"), local("mplus-2p-light");
+  src: url("/docs/fonts/mplus-2p-light.ttf");
+}
+ul, ol { list-style-type: none; }
+header span { display: block; }
+header span[lang="en"] {
+  font-size: 1em;
+  font-family: "M+2 Light";
+}
+header span[lang="jp"] {
+  font-size: 2em;
+  font-family: "M+1 Heavy";
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+footer {
+  font-size: 0.8em;
+  color: #999999;
+}
+article { width: 5em; }
+section#wrapper {
+  margin: 0 auto;
+  width: 950px;
+}

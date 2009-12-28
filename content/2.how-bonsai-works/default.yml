@@ -18,29 +18,18 @@
   
   For a page to be recognised, you'll need a `template-name.yml` file. The "template-name" section of the file name referrers to the template that will be used to render your page.
   
+   The yml file holds the textual content for your page, you can create key/value pairs with strings, hashes or arrays. This allows for outputting text or iterating over more complex objects to write them into your template neatly.
+  
   #### Ordering and "Floating" pages
   
   Bonsai will order your pages within the "navigation", "children" and "siblings" arrays by the prefix given to its parent folder. `content/1.about-us` will be ordered before `content/2.products` but don't worry - this will be cleaned up and removed from the final permalink
   
   "Floating" pages are not present in the "navigation", "children" or "siblings" arrays. This can be achieved by _not_ prefixing the containing directory eg `content/about-us/services` with a digit.
   
-  Each page that you create has access to a set of predefined variables as well as its content, you can use these to build complex navigation and get access to images or downloads stored for each page.
-  
-  #### Page variables
-  
-  | Variable  |                     |  
-  |:----------|:--------------------|
-  |children   | All of the non-floating pages underneath the current page |
-  |siblings   | All of the non-floating pages at the same level. Does not include 'self' |
-  |ancestors  | Each parent up the tree - Useful for breadcrumbing |
-  |parent     | The direct parent page |
-  |permalink  | The full routable path to the page, eg: `/about/our/services` |
-  |slug       | The last chunk of a page name, can be used in HTML as an ID or className, eg: `services` |
-  |name       | A titlcased version of the slug. This can be useful for use in navigation or links |
-  
+  Each page that you create has access to a set of predefined variables as well as its content, you can use these to build complex navigation and get access to images or downloads stored for each page.  
   
   ### Templates
-  Templates are kept in the "templates" directory. All templates are rendered using [mustache](http://github.com/defunkt/mustache). For documentation about more templating, check the mustache readme or google group.
+  Templates are kept in the "templates" directory. All templates are rendered using [tilt](http://github.com/rtomayko/tilt), the generator gives you a mustache template to get you running. For documentation about more templating, check the readme or google group.
   
   ### Public
   All files kept in the "public" directory will be copied into the "output" directory. Any `.less` files will be processed using lesscss and will be renamed to .css

@@ -1,7 +1,7 @@
 <!DOCTYPE>
 <html>
   {{> shared/head}}
-  <body id="{{slug}}" class="default">
+  <body id="{{slug}}" class="toc">
     <section id="wrapper">
       {{> shared/header}}
       {{> shared/nav}}
@@ -9,8 +9,13 @@
       <section>
         <h2>{{title}}</h2>
         <article>
-          {{{body}}}
         </article>
+        
+        <nav id="subnavigation">
+          {{# children}}
+            <a href="{{permalink}}">{{name}}</a>
+          {{/ children}}
+        </nav>
       </section>
       {{> shared/footer}}
     </section>
