@@ -29,8 +29,8 @@
   Each page that you create has access to a set of predefined variables as well as its content, you can use these to build complex navigation and get access to images or downloads stored for each page.  
   
   ### Templates
-  Templates are kept in the "templates" directory. All templates are rendered using [tilt](http://github.com/rtomayko/tilt), the generator gives you a mustache template to get you running. For documentation about more templating, check the readme or google group.
+  Templates are kept in the "templates" directory. All templates are rendered using [Tilt](http://github.com/rtomayko/tilt). Running the `bonsai --plant` generator gives you a mustache template to get you running. To use other templating languages simply use the correct file extension. For documentation about more templating, check the readme or google group.
   
   ### Public
   All files kept in the "public" directory will be copied into the "output" directory. Any `.less` files will be processed using lesscss and will be renamed to .css
-  When you run `bonsai --repot` to ready your site for deployment all the .css and .js files will be minified using the YUI compressor.
+  When you run `bonsai --repot` to ready your site for deployment all the .css and .js files will be minified using the [YUI compressor](http://developer.yahoo.com/yui/compressor/).
