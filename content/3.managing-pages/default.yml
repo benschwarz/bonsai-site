@@ -2,27 +2,54 @@
 :body: |
   Each page is stored in its own directory, it uses a `.yml` file to hold its textual content. 
   That same `.yml` file is also used to infer the template that will be used for your page. For example, `default.yml` will use the `default.mustache` template.
-  
-  Pages have variables for meta information, also, the key and value pairs in the `.yml` file will be cast to variables.
-  For example:
 
       content/
         index/
           default.yml
-  The index page will use the `default.mustache` template
-
+  The index page will use the `default.mustache` template.
+  
   #### Page variables
   
-  | Variable  | What it does |  
-  |:----------|:-------------|
-  |children   | All of the non-floating pages underneath the current page |
-  |siblings   | All of the non-floating pages at the same level. Does not include 'self' |
-  |ancestors  | Each parent up the tree - Useful for breadcrumbing |
-  |parent     | The direct parent page |
-  |permalink  | The full routable path to the page, eg: `/about/our/services` |
-  |slug       | The last chunk of a page name, can be used in HTML as an ID or className, eg: `services` |
-  |name       | A titlcased version of the slug. This can be useful for use in navigation or links |
-  |navigation | The top level non-floating pages |
+  Pages have variables for meta information, also, the key and value pairs in the `.yml` file will be cast to variables.
+  
+  For example - A `.yml` file containing the following:
+    
+      :title: "All about growing a Bonsai"
+      :body: |
+        A bonsai is very difficult care for...
+        You will need to obtain the agilty of 
+        a cat and the mind strenth of a bear
+      
+      :skills:
+        - 
+          :description: "Agility"
+          :animal: "Cat"
+        -
+          :description: "Stength"
+          :animal: "Bear"
+        
+  Will have variables of `{{title}}` and `{{body}}` containing strings, `{{skills}}` will be a hash, which can be used to iterate over to list the skills required to become a bonsai sensei. 
+  
+  #### Pre-defined meta variables
+  
+  You will also have access to variables that contain details about the page in context.
+
+
+  * `permalink` - The full routable path to the page, eg: `/about/our/services`
+  
+  * `slug` - The last chunk of a page name, this will also be HTML/URI safe
+  
+  * `name` - A titlcased version of the slug
+
+  * `parent` - The direct parent page
+
+  * `children` - All of the non-floating pages underneath the current page
+
+  * `siblings` - All of the non-floating pages at the same level. Does not include 'self'
+
+  * `ancestors` - Each parent up the tree - Useful for writing breadcrumbs
+
+  * `navigation` - Top level non-floating pages
   
   #### "Magic" variables
   A page that contains subdirectories will receive additional variables, for example:
@@ -47,3 +74,5 @@
           :disk_path => ".../bonsai-site/content/index/images/miaggi.jpg"
         }
       ]
+
+  This gives you great power and flexibility - You are able to handle pages with different contexts, based on the files that they are able to use or simply iterate over the magic asset variables to render product/project/logo images.
