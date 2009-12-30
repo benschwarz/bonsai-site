@@ -17,6 +17,19 @@
 
   To create the required framework for your new site, use `bonsai --plant jasper`, the generator will create your framework in `./jasper`.
   
-  To have a running webserver of your site while you develop it, run `bonsai --cultivate` from within your generated framework (`cd ./jasper`). A web server will start on port 5000, navigate to [localhost](http://localhost:5000) and get hacking
+  Bonsai comes with a built in webserver to your site while you develop it, run `bonsai --cultivate` from within your generated framework (`cd ./jasper`). A web server will start on port 5000, navigate to [localhost](http://localhost:5000) and get hacking.
   
   When you save, add or remove files `bonsai --cultivate` will process your assets (images, js, and css), they will be rendered into the `output` directory. This is so that they can be served using relative paths.
+  
+  The Bonsai generator will create an index page, `.htaccess` for apache, `base.less` and a default [mustache](http://github.com/defunkt/mustache) template. 
+    
+    If you're uninterested in using [lesscss](http://lesscss.org), simply rename your `base.less` file to `base.css`. 
+    
+    Any `.less` files added to the `public/` directory will be processed with less.
+    
+  You don't have to use mustache either - Bonsai uses "[Tilt](http://github.com/rtomayko/tilt)", to use another templating engine, simply change the file extension.
+  
+  
+  Bonsai decides to give you some defaults using tools that I'd consider the best available for a well designed hierarchical site.
+  
+  To get a better grasp of how Bonsai works, plant your first now.
