@@ -1,6 +1,6 @@
 :title: Getting started with Bonsai
 :body: | 
-  To run Bonsai you will need Ruby and Rubygems. If you're using a Mac the good news is that Ruby and Rubygems will already been installed.
+  To run Bonsai you will need Ruby and Rubygems. If you're using a Mac the good news is that Ruby and Rubygems will already be installed.
   To install Bonsai, open Terminal.app and run `sudo gem install bonsai`.
   
   Once installed typing `bonsai --help` will display a list of available options.
@@ -16,6 +16,7 @@
         --console     
 
   To create the required framework for your new site, use `bonsai --plant jasper`, the generator will create your framework in `./jasper`.
+  
   To have a running webserver of your site while you develop it, run `bonsai --cultivate` from within your generated framework (`cd ./jasper`). A web server will start on port 5000, navigate to [localhost](http://localhost:5000) and get hacking
   
-  When you save, add or remove files `bonsai --cultivate` will process your files, images, js, and css will be rendered into the `output` directory. This is so that they can be served using relative paths.
+  When you save, add or remove files `bonsai --cultivate` will process your assets (images, js, and css), they will be rendered into the `output` directory. This is so that they can be served using relative paths.

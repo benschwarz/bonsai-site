@@ -1,4 +1,8 @@
 :title: Further reading
 :body: |
   
-  To learn more about mustache, you can check the [source of this site](http://github.com/benschwarz/bonsai-site) or read the [google group](http://groups.google.com/). If you find something that you feel isn't quite right - [post an issue](http://github.com/benschwarz/bonsai/issues) for discussion.
+  To learn more about Bonsai, you can check the [source of this site](http://github.com/benschwarz/bonsai-site) or read the [google group](http://groups.google.com/). If you find something that you feel isn't quite right - [post an issue](http://github.com/benschwarz/bonsai/issues) for discussion.
+  
+  Source code available [on Github](http://github.com/bonsai/)
+  
+  Built by <a href="http://www.germanforblack.com/about" rel="author">Ben Schwarz</a>, published under MIT Licence.
