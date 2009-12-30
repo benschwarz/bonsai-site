@@ -1,7 +1,9 @@
 :title: Forward
 :body: |
-  Bonsai is a static web site generator that is designed to keep a clear seperation between your content and templates. It aims to be elegant and follow best web practices. It is well suited to image heavy sites, portfolios and product catalogues.
+  Bonsai is an elegant static website generator, perfect for portfolios, catalogues and other image-heavy sites.
+
+  It differs from other tools in that it's not aimed at blogs or text-heavy sites, but those where simple, well-defined hierarchies are the focus.
+
+  Bonsai is designed to keep a clear separation between content and templates, following best web practices. It has been built with an emphasis on simplicity of use. 
   
-  Bonsai differs from other static generators in that it is not aimed at blogging or textually heavy web sites. It pulls together the best tools available with an emphasis on simplicity. 
-  
-  Its all about you, content and some simple meta attributes.
+  There's no database or admin interface - just templates for the HTML, YML files for the content, and the file system defines the hierarchy.
