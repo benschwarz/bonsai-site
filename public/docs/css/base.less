@@ -1,17 +1,17 @@
 /* Fonts */
+
 @font-face {
-	font-family: "M+1 Heavy";
-	src: url("/docs/fonts/mplus-1p-heavy.eot");
-	src: local("M+ 1p heavy"), local("mplus-1p-heavy");
-	src: url("/docs/fonts/mplus-1p-heavy.ttf");
+	font-family: 'M+2 Light';
+	src: url('/docs/fonts/mplus-2p-light.eot');
+	src: url('/docs/fonts/mplus-2p-light.woff') format('woff'), url('/docs/fonts/mplus-2p-light.ttf') format('truetype');
 }
 
 @font-face {
-	font-family: "M+2 Light";
-	src: url("/docs/fonts/mplus-2p-light.eot");
-	src: local("M+ 2p light"), local("mplus-2p-light");
-	src: url("/docs/fonts/mplus-2p-light.ttf");
+	font-family: 'M+1 Heavy';
+	src: url('/docs/fonts/mplus-1p-heavy.eot');
+	src: url('/docs/fonts/mplus-1p-heavy.woff') format('woff'), url('/docs/fonts/mplus-1p-heavy.ttf') format('truetype');
 }
+
 /* 16 column grid. */
 .column { margin-right: 20px; float: left; }
 .one { width: 40px; }
@@ -48,13 +48,13 @@ header {
 	
 	span { display: block; }
 	span[lang="ja"] { font-size: 1.5em; font-family: "M+1 Heavy", "Helvetica", "Arial", "sans-serif"; font-weight: 700; }
-	span[lang="en"] { font-size: 0.8em; font-family: "M+2 Light", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"; font-weight: 300; margin-top: -0.6em;	}
+	span[lang="en"] { font-size: 0.8em; font-family: "M+2 Light", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"; font-weight: 300;	}
 	a { text-decoration: none; color: white; position: absolute; margin: 20px 0 0 25px; }
 	#logo {    width: 145px; height: 145px; -moz-border-radius: 72px; -webkit-border-radius: 72px; border-radius: 72px; background-color: black; position: relative; margin: 0 auto; }
 }
 
 nav.main { 
-	margin: 5em auto; text-transform: lowercase; text-align: center; width: 100%; font-style: italic; line-height: 1.5em; font-size: 0.8em; font-style: italic;
+	.ten; border-bottom: 1px solid black; padding-bottom: 5em; margin: 5em auto 2.5em auto; text-transform: lowercase; text-align: center; font-style: italic; line-height: 1.5em; font-size: 0.8em; font-style: italic;
 	li { display: inline; }
 	li:not(:last-child):after { content: "/"; }
 	a { color: black; text-decoration: none; padding: 0.25em 0.4em; }
@@ -73,7 +73,6 @@ section#content {
 	a { color: inherit; .small-caps; }
 }
 
-footer { .centered; .nine; text-align: center; font-size: 0.7em; color: #999; }
-footer hr { border: 1px solid black; }
+footer { .centered; .ten; border-top: 1px solid black; text-align: center; font-size: 0.7em; color: #999; }
 footer p { margin: 1em 2em; font-style: italic; }
 footer a { color: inherit; .small-caps; }
