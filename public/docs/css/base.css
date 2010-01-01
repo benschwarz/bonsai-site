@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'M+2 Light';
+  src: url('/docs/fonts/mplus-2p-light.eot');
+  src: url('/docs/fonts/mplus-2p-light.woff') format('woff'), url('/docs/fonts/mplus-2p-light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'M+1 Heavy';
+  src: url('/docs/fonts/mplus-1p-heavy.eot');
+  src: url('/docs/fonts/mplus-1p-heavy.woff') format('woff'), url('/docs/fonts/mplus-1p-heavy.ttf') format('truetype');
+}
+.column {
+  margin-right: 20px;
+  float: left;
+}
+.one { width: 40px; }
+.two { width: 100px; }
+.three { width: 160px; }
+.four { width: 220px; }
+.five { width: 280px; }
+.six { width: 340px; }
+.seven { width: 400px; }
+.eight { width: 460px; }
+.nine { width: 520px; }
+.ten { width: 580px; }
+.eleven { width: 640px; }
+.twelve { width: 700px; }
+.thirteen { width: 760px; }
+.fourteen { width: 820px; }
+.fifteen { width: 880px; }
+.sixteen { width: 940px; }
+.centered { margin: 0 auto; }
+.small-caps {
+  text-transform: uppercase;
+  font-size: 90%;
+  letter-spacing: 0.2em;
+}
+h1, h2, h3, h4, h5, h6, p, span, ul, ol, li {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+section, header, footer, nav, article { display: block; }
+ul, ol { list-style-type: none; }
+body {
+  color: #333333;
+  font-family: "Times", "Times New Roman", "serif";
+}
+section#wrapper {
+  margin: 0 auto;
+  width: 700px;
+}
+header { margin-top: 5em; }
+header span { display: block; }
+header span[lang="ja"] {
+  font-size: 1.5em;
+  font-family: "M+1 Heavy", "Helvetica", "Arial", "sans-serif";
+  font-weight: 700;
+}
+header span[lang="en"] {
+  font-size: 0.8em;
+  font-family: "M+2 Light", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-weight: 300;
+}
+header a {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  margin: 20px 0 0 25px;
+}
+header #logo {
+  width: 145px;
+  height: 145px;
+  -moz-border-radius: 72px;
+  -webkit-border-radius: 72px;
+  border-radius: 72px;
+  background-color: black;
+  position: relative;
+  margin: 0 auto;
+}
+nav.main {
+  width: 580px;
+  border-bottom: 1px solid black;
+  padding-bottom: 5em;
+  margin: 5em auto 2.5em auto;
+  text-transform: lowercase;
+  text-align: center;
+  font-style: italic;
+  line-height: 1.5em;
+  font-size: 0.8em;
+  font-style: italic;
+}
+nav.main li { display: inline; }
+nav.main li:not(:last-child):after { content: "/"; }
+nav.main a {
+  color: black;
+  text-decoration: none;
+  padding: 0.25em 0.4em;
+}
+nav.main a:hover { text-decoration: underline; }
+section#content {
+  margin: 0 auto;
+  width: 520px;
+  margin-bottom: 5em;
+}
+section#content h2 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  font-style: italic;
+  text-align: center;
+  width: 100%;
+}
+section#content h3 {
+  font-size: 1.8em;
+  margin: 2em 0 1em 0;
+  font-style: italic;
+  text-align: center;
+}
+section#content h4 {
+  font-size: 1.2em;
+  margin: 2em 0 1em 0;
+  text-transform: uppercase;
+  font-size: 90%;
+  letter-spacing: 0.2em;
+  font-style: italic;
+}
+section#content p {
+  font-size: 0.9em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+section#content pre {
+  background-color: #eeeeee;
+  padding: 1em;
+  width: 100%;
+}
+section#content p > code {
+  background-color: #eeeeee;
+  padding: 0.25 0.5;
+}
+section#content a {
+  color: inherit;
+  text-transform: uppercase;
+  font-size: 90%;
+  letter-spacing: 0.2em;
+}
+footer {
+  margin: 0 auto;
+  width: 580px;
+  border-top: 1px solid black;
+  text-align: center;
+  font-size: 0.7em;
+  color: #999999;
+}
+footer p {
+  margin: 1em 2em;
+  font-style: italic;
+}
+footer a {
+  color: inherit;
+  text-transform: uppercase;
+  font-size: 90%;
+  letter-spacing: 0.2em;
+}
