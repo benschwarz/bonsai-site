@@ -25,7 +25,7 @@
           :description: "Agility"
           :animal: "Cat"
         -
-          :description: "Stength"
+          :description: "Strength"
           :animal: "Bear"
         
   Will have variables of `{{title}}` and `{{body}}` containing strings, `{{skills}}` will be a hash, which can be used to iterate over to list the skills required to become a bonsai sensei. 
@@ -39,7 +39,7 @@
   
   * `slug` - The last chunk of a page name, this will also be HTML/URI safe
   
-  * `name` - A titlcased version of the slug
+  * `name` - A titlecased version of the slug
 
   * `parent` - The direct parent page
 
