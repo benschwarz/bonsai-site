@@ -86,9 +86,8 @@ nav.main {
   text-transform: lowercase;
   text-align: center;
   font-style: italic;
-  line-height: 1.5em;
-  font-size: 0.8em;
-  font-style: italic;
+  font-size: 0.9em;
+  text-shadow: #eeeeee 1px 1px 1px;
 }
 nav.main li { display: inline; }
 nav.main li:not(:last-child):after { content: "/"; }
@@ -109,6 +108,7 @@ section#content h2 {
   font-style: italic;
   text-align: center;
   width: 100%;
+  text-shadow: white 1px 1px 1px;
 }
 section#content h3 {
   font-size: 1.8em;

@@ -1,7 +1,9 @@
 :title: Getting started with Bonsai
 :body: | 
-  To run Bonsai you will need Ruby and Rubygems. If you're using a Mac the good news is that Ruby and Rubygems will already be installed.
+  If you're using a Mac the good news is that Bonsai is dirt simple to get running.
   To install Bonsai, open Terminal.app and run `sudo gem install bonsai`.
+  
+  Bonsai has a built in web server, so you won't need to fiddle about with any other software.
   
   Once installed typing `bonsai --help` will display a list of available options.
       > bonsai --help  
@@ -19,13 +21,13 @@
   
   The Bonsai generator will create an index page, `.htaccess` for apache, `base.less` and a default [mustache](http://github.com/defunkt/mustache) template. 
     
-  If you're uninterested in using [lesscss](http://lesscss.org), simply rename your `base.less` file to `base.css`. 
+  If you're uninterested in using [less](http://lesscss.org), simply rename your `base.less` file to `base.css`. 
     
-  Any `.less` files added to the `public/` directory will be processed with less.
+  Any `.less` or `.sass` files added to the `public/` directory will be processed with less and sass respectively.
     
   You don't have to use mustache either - Bonsai uses "[Tilt](http://github.com/rtomayko/tilt)", to use another templating engine, simply change the file extension.
   
-  Bonsai comes with a built in webserver, use it while building your website. Run `bonsai --cultivate` from within your generated framework (`cd ./jasper`). A web server will start on port 5000, navigate to [localhost](http://localhost:5000) and get hacking.
+  To use Bonsai's built in server while building your website. Run `bonsai --cultivate` from within your generated framework (`cd ./jasper`). your web browser of choice will open.
   
   When you save, add or remove files `bonsai --cultivate` will also process your assets (images, js, and css).
   

@@ -1,9 +1,9 @@
 :title: Forward
 :body: |
-  Bonsai is a simple website builder. Perfect for portfolios, catalogues and other image-heavy sites.
+  Bonsai builds dynamic web sites that run anywhere. Perfect for portfolios, catalogues and other image-heavy sites.
+  
+  There's no database or admin interface - just templates for the HTML, YML files for the content, and the file system defines the hierarchy. Upload the results and you're away.
 
-  It differs from other tools in that it's not aimed at blogs or text-heavy sites, but those where simple, well-defined hierarchies are the focus.
+  It's not aimed at blogs or text-heavy sites, but those where simple, well-defined hierarchies are the focus.
 
   Bonsai is designed to keep a clear separation between content and templates, following best web practices. It has been built with an emphasis on simplicity of use. 
-  
-  There's no database or admin interface - just templates for the HTML, YML files for the content, and the file system defines the hierarchy.
