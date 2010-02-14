@@ -1,3 +1,7 @@
-:site: 
-  :name: Bonsai
-  :url: http://www.tinytree.info
+# The key value pairs found below are available within the templates.
+# {{site_name}}, {{url}}, {{copyright}} and {{analytics_code}}
+
+:site_name: Bonsai
+:url: http://www.tinytree.info
+:copyright: 2010
+:analytics_code: UA-12260463-1
