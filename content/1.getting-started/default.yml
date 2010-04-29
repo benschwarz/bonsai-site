@@ -6,7 +6,8 @@
   Bonsai has a built in web server, so you won't need to fiddle about with any other software.
   
   Once installed typing `bonsai --help` will display a list of available options.
-      > bonsai --help  
+      
+      $ bonsai --help  
 
       盆栽
       bonsai, tiny and beautiful

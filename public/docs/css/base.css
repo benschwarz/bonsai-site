@@ -47,7 +47,7 @@ body {
 }
 section#wrapper {
   margin: 0 auto;
-  width: 700px;
+  width: 580px;
 }
 header { margin-top: 5em; }
 header span { display: block; }
@@ -133,6 +133,7 @@ section#content pre {
   background-color: #eeeeee;
   padding: 1em;
   width: 100%;
+  overflow: hidden;
 }
 section#content p > code {
   background-color: #eeeeee;
