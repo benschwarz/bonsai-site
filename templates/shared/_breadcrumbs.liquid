@@ -1,0 +1,9 @@
+<nav id="breadcrumbs">
+  <ol>
+    <li><a href="/">Home</a></li>
+    {% for link in ancestors %}
+      <li><a href="{{link.permalink}}">{{link.name}}</a></li>
+    {% endfor %}
+    <li>{{title}}</li>
+  </ol>
+</nav>

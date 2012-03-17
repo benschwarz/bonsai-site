@@ -1,0 +1,7 @@
+<nav class="main">
+  <ol id="navigation">
+    {% for nav in navigation %}
+      <li><a href="{{nav.permalink}}" title="{{nav.title}}">{{nav.name}}</a></li>
+    {% endfor %}
+  </ol>
+</nav>

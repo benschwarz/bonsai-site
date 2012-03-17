@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
-  {{> shared/head}}
+  {% include 'shared/head' %}
   <body id="{{slug}}" class="default">
     <section id="wrapper">
-      {{> shared/header}}
-      {{> shared/nav}}
+      {% include 'shared/header' %}
+      {% include 'shared/nav' %}
     
       <section id="content">
         <h2>{{title}}</h2>
         <article>
-          {{{body}}}
+          {{body}}
         </article>
       </section>
     </section>
-    {{> shared/footer}}
-    {{> shared/analytics}}
+    {% include 'shared/footer' %}
+    {% include 'shared/analytics' %}
     <script src="/docs/js/jquery.js" type="text/javascript"></script>
     <script src="/docs/js/tracking.js" type="text/javascript"></script>
   </body>
